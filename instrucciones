@@ -1,0 +1,21 @@
+PRÁCTICAS CON HARDWARE ABIERTO (24/10/2015)
+
+1.	Descargar el programa Arduino desde www.arduino.cc (versión 1.6.5)
+2.	Descargar el programa Processing desde www.processing.org (versión 2.2.1)
+3.	Descargamos la biblioteca de realidad aumentada nyar4psg en la carpeta de modes/java/libraries
+https://github.com/nyatla/NyARToolkit-for-Processing/releases
+4.	En Processing descargar la biblioteca Arduino Firmata (Sketch>Añadir biblioteca>Arduino) para el reconocimiento de Arduino por Processing
+5.	En Processing descargar la biblioteca ttslib (Sketch>Añadir biblioteca>ttslib) para conseguir la síntesis de voz
+6.	En Processing descargar la biblioteca openCV (Sketch>Añadir biblioteca>Arduino) para el reconocimiento de caras
+7.	Descargamos los 2 ejemplos que mezclan realidad augmentada con arduino y visión por ordenador con arduino (ambos con síntesis de voz) en http://www.github.com/drfperez/scientix
+8.	Colocar un LED en el Arduino en el pin 13 (pata larga del LED positivo) y GND (pata corta del LED negativo o ground)
+9.	Abrir Archivo>Ejemplos>01Basics>Blink
+10.	Clicar a la fecha de enviar archivo de color verde y comprovar que el LED se enciende.
+11.	Si no funcionara Ir a Administración de dispositivos y encontraremos un USB desconocido e indicamos que instale la carpeta de drivers que se encuentra dentro del programa Arduino
+12.	Variamos el tiempo para comprovar que el blinking o parpadeo del LED funciona (por ejemplo podemos cambiar el número de 1000 ms de tiempo de encendido y apagado por 100 ms)
+13.	Abrimos Archivo>Ejemplos>Firmata>StandardFirmata y lo enviamos. Permitirá la comunicación entre Processing y Arduino
+14.	Opcional: Comprobar con un ejemplo cualquiera que se encuentre en la carpeta examples de la biblioteca arduino (firmata) que Arduino se detecta en un Puerto COM, desde COM1 hasta COM9 por ejemplo.
+15.	Abrimos los ejemplos del apartado 7 y comprobamos su correcto funcionamiento.
+16.	En el ejemplo “augmentedrealityttsarduino.pde” el sistema reconoce un marcador de realidad aumentada para decidir que LED encender a Arduino
+17.	En el ejemplo “facerecognitionttsarduino.pde” el sistema indica el número de caras que se reconocen, su posición en la pantalla mediante voz automática y enciende un numero de LED igual que el número de caras que se observan. También hemos hecho que haga fotos dependiendo del número de caras.
+18.	Más información en http://www.tecnologies.net
